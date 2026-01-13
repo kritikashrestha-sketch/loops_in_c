@@ -2,25 +2,26 @@
 
 int main() {
    
-    int numStudents, status;
-    int presentCount = 0;
+    int numstudents,status;
+    int presentcount = 0;
 
-    printf(" Attendance Counter \n");
-    printf("How many students? ");
-    scanf("%d", &numStudents);
+    printf(" attendance counter \n");
+    printf("how many students? ");
+    scanf("%d", &numstudents);
 
     
-    for (int i = 1; i <= numStudents; i++) {
-        printf("Is student %d present? (1 for Yes, 0 for No): ", i);
+    for (int i = 1; i <= numstudents; i++) {
+        printf("is student %d present? (1 for yes, 0 for no): ", i);
         scanf("%d", &status);
         if (status == 1) {
             presentCount++; 
         }
     }
 
-    float percent = ((float)presentCount / numStudents) * 100;
-    printf("Total Present: %d\n", presentCount);
-    printf("Attendance: %.2f%%\n\n", percent);
+    float percent = ((float)presentcount / numstudents) * 100;
+    printf("total present: %d\n", presentCount);
+    printf("attendance: %.2f%%\n\n", percent);
     
     return 0;
+
 }
